@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Filename:  0-square"""
+
+
 class Square:
-    def __init__(self, size):
-        self.__size = size
+    """An empty class Square that defines a square:"""
+    pass
