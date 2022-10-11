@@ -21,12 +21,13 @@ class Node:
         if not isinstance(value, int):
             raise TypeError('data must be an integer')
         self.__data = value
-                
+                           
     @property
     def next_node(self):
         """next_node Getter"""
         return self.__next_node
-                                                                                                                            @next_node.setter
+
+    @next_node.setter
     def next_node(self, value):
         """next_node Setter"""
         if value is not None and type(value) != Node:
@@ -48,13 +49,13 @@ class SinglyLinkedList:
         while node:
             result += str(node.data) + '\n'
             node = node.next_node
-        return result[:-1]
+            return result[:-1]
 
     def sorted_insert(self, value):
         """Inserts a new node at sorted position"""
         new_node = Node(value)
-        
-        if not self.head:        
+
+        if not self.head:
             self.head = new_node
             return
 
@@ -62,7 +63,7 @@ class SinglyLinkedList:
             new_node.next_node = self.head
             self.head = new_node
             return
-
+        
         node = self.head
         while node.next_node and node.next_node.data < value:
             node = node.next_node
