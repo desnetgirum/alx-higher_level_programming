@@ -57,10 +57,12 @@ class SinglyLinkedList:
         if not self.head:        
             self.head = new_node
             return
+
         if value < self.head.data:
             new_node.next_node = self.head
             self.head = new_node
             return
+
         node = self.head
         while node.next_node and node.next_node.data < value:
             node = node.next_node
