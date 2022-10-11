@@ -18,7 +18,7 @@ class Square:
     def size(self):
         """Getter for square"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Initializes attribute size """
@@ -27,7 +27,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     def __eq__(self, other):
         """Equal"""
         return self.size == other.size
@@ -47,7 +47,7 @@ class Square:
     def __gt__(self, other):
         """Greater than"""
         return self.size > other.size
-                
+    
     def __ge__(self, other):
         """Greater than or equal"""
         return self.size >= other.size
