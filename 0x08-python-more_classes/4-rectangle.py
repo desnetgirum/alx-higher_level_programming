@@ -22,7 +22,7 @@ class Rectangle:
         width getter
         """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """
@@ -57,7 +57,7 @@ class Rectangle:
         Returns a rectangle's area
         """
         return self.width * self.height
-                                       
+
     def perimeter(self):
         """
         Returns a rectangle's perimeter
@@ -68,7 +68,7 @@ class Rectangle:
 
     def __str__(self):
         """
-        string represenation
+        String represenation
         """
         string = ""
         for i in range(self.height):

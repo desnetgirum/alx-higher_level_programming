@@ -54,14 +54,14 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-    """
-    width setter
-    """
-    if not isinstance(value, int):
-        raise TypeError('height must be an integer')
-    if value < 0:
-        raise ValueError('height must be >= 0')
-    self.__height = value
+        """
+        width setter
+        """
+        if not isinstance(value, int):
+            raise TypeError('height must be an integer')
+        if value < 0:
+            raise ValueError('height must be >= 0')
+        self.__height = value
 
     def area(self):
         """
@@ -84,7 +84,7 @@ class Rectangle:
         string = ""
         for i in range(self.height):
             string += str(self.print_symbol) * self.width + '\n'
-            return string[:-1]
+        return string[:-1]
 
     def __repr__(self):
         """
