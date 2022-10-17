@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 1-rectangle.py)
 """
 
 
 class Rectangle:
-        """
-        A class Square that defines a square
-        """
+    """
+    A class Rectanle that defines a rectangle
+    """
 
     def __init__(self, width=0, height=0):
         """
@@ -29,7 +29,7 @@ class Rectangle:
         width setter
         """
         if not isinstance(value, int):
-            raise TypeError('width must be an integer')
+            TypeError('width must be an integer')
         if value < 0:
             raise ValueError('width must be >= 0')
         self.__width = value
@@ -37,7 +37,7 @@ class Rectangle:
     @property
     def height(self):
         """
-        height getter
+        width getter
         """
         return self.__height
 
@@ -47,7 +47,21 @@ class Rectangle:
         width setter
         """
         if not isinstance(value, int):
-            raise TypeError('height must be an integer')
+            TypeError('width must be an integer')
         if value < 0:
-            raise ValueError('height must be >= 0')
+            raise ValueError('width must be >= 0')
         self.__height = value
+
+    def area(self):
+        """
+        Returns a rectangle's area
+        """
+        return self.width * self.height
+
+    def perimeter(self):
+        """
+        Returns a rectangle's perimeter
+        """
+        if self.width == 0 or self.height == 0:
+            return 0
+        return (self.width + self.height) * 2
