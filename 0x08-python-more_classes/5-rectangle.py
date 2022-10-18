@@ -10,7 +10,7 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
-        """ 
+        """
         Initializes private attribute width and height
         """
         self.width = width
@@ -24,7 +24,7 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, value)
         """
         width setter
         """
@@ -51,7 +51,7 @@ class Rectangle:
         if value < 0:
             raise ValueError('width must be >= 0')
         self.__height = value
-                            
+
     def area(self):
         """
         Returns a rectangle's area
@@ -65,7 +65,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return (self.width + self.height) * 2
-                                             
+
     def __str__(self):
         """
         String representation
@@ -76,6 +76,7 @@ class Rectangle:
         return string[:-1]
 
     def __repr__(self):
+
         """
         Representation
         """
