@@ -29,7 +29,7 @@ if __name__ == "__main__":
         for x in range(n):
             if y == a[x][1]:
                 return True
-            return False
+        return False
 
     def reject(x, y):
         """determines whether or not to reject the solution"""
@@ -40,7 +40,6 @@ if __name__ == "__main__":
             if abs(a[i][1] - y) == abs(i - x):
                 return False
             i += 1
-
         return True
 
     def clear_a(x):
@@ -59,5 +58,5 @@ if __name__ == "__main__":
                 else:
                     nqueens(x + 1)  # moves on to next x value to continue
 
-# start the recursive process at x = 0
+    # start the recursive process at x = 0
     nqueens(0)
