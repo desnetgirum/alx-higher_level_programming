@@ -24,6 +24,7 @@ try:
             if line[-2] in codes:
                 codes[line[-2]] += 1
                 iteration += 1
+
             try:
                 total_size += int(line[-1])
                 if tmp == iteration:
@@ -37,5 +38,5 @@ try:
 
     print_stats()
 
-except KeyboardInterrupt: 
+except KeyboardInterrupt:
     print_stats()
