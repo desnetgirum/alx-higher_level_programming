@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This is the Base module.
+
 Contains the Base class which will be the
 “base” of all other classes in this project.
 """
@@ -79,8 +80,8 @@ class Base():
             new = cls(1, 1)
         else:
             new = cls(1)
-            new.update(**dictionary)
-            return new
+        new.update(**dictionary)
+        return new
 
     @classmethod
     def load_from_file(cls):
