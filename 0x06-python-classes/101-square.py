@@ -14,7 +14,7 @@ class Square:
     def area(self):
         """Calculate area of square"""
         return (self.__size * self.__size)
-    
+
     @property
     def size(self):
         """Getter for square"""
@@ -48,7 +48,7 @@ class Square:
     def my_print(self):
         """Print method"""
         print(self.__str__())
-    
+
     def __str__(self):
         """Print representation of squares"""
         if self.size == 0:

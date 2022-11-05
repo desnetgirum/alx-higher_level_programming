@@ -21,7 +21,7 @@ class Node:
         if not isinstance(value, int):
             raise TypeError('data must be an integer')
         self.__data = value
-                           
+
     @property
     def next_node(self):
         """next_node Getter"""
@@ -41,7 +41,7 @@ class SinglyLinkedList:
     def __init__(self):
         """Initialize SSL class"""
         self.head = None
-
+                        
     def __str__(self):
         """To string method"""
         result = ""
@@ -54,7 +54,7 @@ class SinglyLinkedList:
     def sorted_insert(self, value):
         """Inserts a new node at sorted position"""
         new_node = Node(value)
-
+        
         if not self.head:
             self.head = new_node
             return
