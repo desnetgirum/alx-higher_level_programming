@@ -11,11 +11,11 @@ import turtle
 
 class Base():
     """This class will be the “base” of all other classes in this project.
-    
+
     The goal is to manage id attribute in all our future classes
     and to avoid duplicating the same code and same errors.
     
-    Attributes:
+    Attributes:     
         __nb_objects (int): the number of created Base objects.
     """
 
@@ -36,7 +36,7 @@ class Base():
     @staticmethod
     def to_json_string(list_dictionaries):
         """Returns the JSON string representation of list_dictionaries.
-
+        
         Args:
             list_dictionaries (list): a list of dictionaries.
         """
@@ -47,7 +47,7 @@ class Base():
     @classmethod
     def save_to_file(cls, list_objs):
         """Writes the JSON string representation of list_objs to a file.
-
+        
         Args:
             list_objs (list): a list of objects.
         """
@@ -133,10 +133,10 @@ class Base():
 
         except IOError:
             return []
-    
+
     def draw(list_rectangles, list_squares):
         """Opens a window and draws all the Rectangles and Squares.
-
+        
         Args:
             list_rectangles (list): a list of rectangle instances.
             list_squares (list): a list of square instances.
@@ -157,7 +157,7 @@ class Base():
                 t.forward(rect.height)
                 t.left(90)
             t.penup()
-        
+
         t.goto(-200, -20)
         for squ in list_squares:
             t.goto(t.xcor() + (squ.width + 20), t.ycor() - (squ.height + 20))
